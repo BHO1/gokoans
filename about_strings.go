@@ -22,7 +22,7 @@ func aboutStrings() {
 	bytes[0] = 'z'
 	assert(string(bytes) == "zbc") // byte-slices can be mutated, although strings cannot
 
-	assert(fmt.Sprintf("hello %s, mein Alter ist %i", "world", 52) == "hello % world, mein Alter is 52") // our old friend sprintf returns
+	assert(fmt.Sprintf("hello %s", "world") == "hello world") // our old friend sprintf returns
 	assert(fmt.Sprintf("hello \"%s\"", "world") == "hello \"world\"")                                    // quoting is familiar
 	assert(fmt.Sprintf("hello %q", "world") == "hello \"world\"")                                        // although it can be done more easily
 
