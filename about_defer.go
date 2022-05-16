@@ -38,6 +38,6 @@ func aboutDefer() {
 		panic("Expected error")
 	}()
 
-	assert(acc == __int__) // executed even in case of panic
+	assert(acc == 1) // executed even in case of panic
 
 }
